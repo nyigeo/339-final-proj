@@ -1,0 +1,26 @@
+body{
+    font-family: 'Chango';
+    font-size: 22px;
+}
+.gallery{
+    border: 3px groove #cc6699;
+    width: 90%;
+    margin: 10px auto;
+    background-color: #9999ff;
+
+
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-around;
+    align-items: center;
+}
+header img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.gallery img{
+    width:100%;
+    border: 10px groove #ffccff;
+}
