@@ -1,26 +1,187 @@
+html{
+    scroll-behavior: smooth;
+}
+/* #skip{
+    width: 475px; 
+    animation: hw5_move 5s; 
+}
+@keyframes hw5_move{
+    from{width:25px; opacity: 0;}
+    to{width:475px; opacity: 1;}
+
+} */
 body{
-    font-family: 'Chango';
+    /* font-family: 'Bungee Shade'; */
+    /* font-family: Chango, 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;  */
     font-size: 22px;
+    background-color: #CCCCFF;
+    /* background-color: #cad778; */
+    /* background-color: rgb(126, 188, 188); */
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: 10px groove #ffccff;
+    border-radius: 25px;
+    /* text-align: center; */
+}
+.overview{
+    background-attachment: fixed;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;      
+    color: royalblue;
+    height: 600px;               
+} 
+.overview h1{
+    color: royalblue;
+    font-size: 24px;
+    padding: 0 100px;
+    text-align: center;
+}
+p{
+    color: royalblue;
+    font-size: 24px;
+    padding: 0 100px;
+    text-align: center;  
+}
+nav li{
+    display:inline;
+    padding-right: 20px;
+}
+.skip a{
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    /* width: 50%;
+    border: 10px groove #ffccff;
+    margin-top: 10000px; */
+}
+nav{
+    background-color: rgb(154, 174, 234);
+    padding: 25px ; 
+    text-align: right;
+}
+footer{
+    background-color:  rgb(154, 174, 234);
+    padding-top: 30px;
+    text-align: center;
+} 
+.text-block{
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
 }
 .gallery{
-    border: 3px groove #cc6699;
     width: 90%;
     margin: 10px auto;
-    background-color: #9999ff;
-
-
     display: grid;
     grid-template-columns: 25% 25% 25%;
     justify-content: space-around;
     align-items: center;
 }
-header img{
-    width: 50%;
+main img{
+    width: 30%;
     display: block;
     margin: auto;
 }
-
 .gallery img{
-    width:100%;
-    border: 10px groove #ffccff;
+    width: 100%;
+    border: 20px groove #ffccff;
+    margin-top: 80px;
 }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 200%;
+    border: 20px solid #CCCCFF;
+    /* perspective: 1000px; */
+}
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 200%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    /* position: absolute; */
+    position: relative;
+    width: 50%;
+    height: 50%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+  /* Style the front side (fallback if image is missing) */
+/* .flip-card-front {
+    background-color: #bbb;
+    color: yellow;
+} */
+  
+  /* Style the back side */
+.flip-card-back{
+    background-color: transparent;
+    /* color: white; */
+    font-size: 22px;
+    transform: rotateY(180deg);
+}
+
+h1{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        65% {
+          font-size: 200%;
+          margin-left: 25%;
+          width: 150%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+}
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    65% {
+      font-size: 200%;
+      margin-left: 25%;
+      width: 150%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+

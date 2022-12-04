@@ -4,28 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/plantplant.png" />
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Glass Antiqua' rel='stylesheet'>
     <title>Welcome to Plant Blog</title>
 </head>
+<style>
+body {
+    font-family: 'Glass Antiqua'; font-size: 25px;
+}
+/* .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+} */
+</style>
 <body>
-    <a href="#skip">Skip to Content</a>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <!-- <button class="button">Click Me</button> -->
+    </div>
     <header>
         <nav>
             <ul>
-                <li class="current">
-                    <a href = "index.html">Home</a>
-                </li>
+                <li class="current"><a href = "index.html">Home</a></li>
                 <li><a href="colleen.html">Indoor House Plants</a></li>
                 <li><a href="jackie.html">Outdoor House Plants</a></li>
             </ul>
         </nav>
-        <h1>Welcome to Plant Blog</h1>
-        <img src = "images/cover_image.jpg" width="800" alt = "">
     </header>
-
-    <main>
-        <h2>Should I keep my plant outside or inside my home?</h2>
+    <main class="container" id = "main">
+        <div class = overview>
+          <h1>Welcome to Plant Blog.</h1>
+          <p>Creating a visual blog to share information about house plants and their common everyday needs.</p>
+          <img src="images/purpleplant.jpg" width="1000" alt="purple plant"/>
+        </div>
     </main>
-
+    <footer>
+        <p>University of Michigan-School of Information<br/>
+          &copy; Nyia George, Web Design and Accessibility Fall 2022</p>
+    </footer>
 </body>
 </html>
