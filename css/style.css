@@ -76,13 +76,14 @@ footer{
 }
 .gallery{
     width: 90%;
+    height: 90%;
     margin: 10px auto;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 25% 25% 25%;
     justify-content: space-around;
     align-items: center;
     display: flex;
-    flex-
+    flex- */
 }
 main img{
     width: 30%;
@@ -94,6 +95,15 @@ main img{
     height: 300%;
     border: 20px groove #ffccff;
     margin-top: 80px;
+    /* grid-template-columns: 25% 25% 25%;
+    justify-content: space-around;
+    align-items: center;
+    display: grid flex;
+    align-items: center; 
+
+    justify-content: space-evenly;
+    justify-content: flex-end;
+    flex-direction: row; */
 }
 
 .flip-card {
@@ -101,8 +111,18 @@ main img{
     width: 300px;
     height: 300px;
     perspective: 1000px;
-  }
-  
+    /* grid-template-columns: 65% 65% 65%; */
+    grid-template-columns: 1fr 3/5 span;
+    grid-template-rows: 3/3 span;
+    justify-content: space-around;
+    align-items: center;
+    display: grid flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    justify-content: flex-end;
+    flex-direction: row;
+    place-items: center;
+}
   .flip-card-inner {
     position: relative;
     width: 100%;
