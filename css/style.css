@@ -61,12 +61,12 @@ nav li{
     font-size: 18px;
 }
 nav{
-    background-color: rgb(187, 196, 226);
+    background-color: rgb(160, 179, 239);
     padding: 25px ; 
     text-align: right;
 }
 footer{
-    background-color:  rgb(187, 196, 226);
+    background-color:  rgb(160, 179, 239);
     padding-top: 30px;
     text-align: center;
 } 
