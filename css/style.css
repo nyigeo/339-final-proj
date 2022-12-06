@@ -17,14 +17,14 @@ img{
     background-position: center;  
     background-repeat: no-repeat; 
     background-size: cover;      
-    color: white;
+    color: royalblue;
     height: 600px;               
 } 
 /* .current{
     color:white; 
 } */
 .overview h1{
-    color: white;
+    color: royalblue;
     font-weight: bolder;
     font-size: 24px;
     padding: 0 100px;
@@ -32,7 +32,7 @@ img{
 }
 p{
     /* color: royalblue; */
-    color: white;
+    color: royalblue;
     /* color: white; */
     font-size: 24px;
     padding: 0 100px;
