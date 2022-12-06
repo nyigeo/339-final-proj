@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
+.active{
+    font-style: italic;
+    font-weight: bolder;
+}
 img{
     border: 10px groove #ffccff;
     border-radius: 25px;
@@ -54,7 +58,7 @@ nav{
     text-align: right;
 }
 footer{
-    background-color:  rgb(160, 179, 239);
+    background-color:  rgb(158, 178, 238);
     padding-top: 30px;
     text-align: center;
     text-decoration: bolder;
