@@ -1,13 +1,6 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    font-size: 25px;
-    background-color: #CCCCFF;
-    line-height: 1.45;
-    margin: 0;
-    padding: 0;
-}
 img{
     border: 10px groove #ffccff;
     border-radius: 25px;
@@ -20,9 +13,6 @@ img{
     color: royalblue;
     height: 600px;               
 } 
-/* .current{
-    color:white; 
-} */
 .overview h1{
     color: royalblue;
     font-weight: bolder;
@@ -31,9 +21,7 @@ img{
     text-align: center;
 }
 p{
-    /* color: royalblue; */
     color: royalblue;
-    /* color: white; */
     font-size: 24px;
     padding: 0 100px;
     text-align: center;  
@@ -50,7 +38,6 @@ nav li{
     left: 10px; 
     top: -40px; 
     position: absolute; 
-    /* left: 0; */
     padding: 6px;
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
@@ -63,7 +50,7 @@ nav li{
 }
 nav{
     background-color: rgb(160, 179, 239);
-    padding: 25px ; 
+    padding: 25px; 
     text-align: right;
 }
 footer{
@@ -71,39 +58,18 @@ footer{
     padding-top: 30px;
     text-align: center;
 } 
-.text-block{
-    background-color: rgba(255, 255, 255, .8);
-    border: 10px solid black;
-}
-.gallery{
-    width: 90%;
-    height: 90%;
-    margin: 10px auto;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    align-items: center;
-    justify-content: space-around;
-    grid-gap: 80px;
-    padding-bottom: 50px;
-}
-
-main img{
+.overview img{
     width: 30%;
     display: block;
     margin: auto;
-    place-items: center;
 }
 .gallery img{
-    /* width: 3000%;
-    height: 3000%; */
     width: 300px; 
     height: 300px;
     border: 20px groove #ffccff;
-    /* place-items: center; */
-    /* display: flex; */
-    /* margin-top: 80px; */
 }
 
+/* Flip card feature */
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -116,18 +82,13 @@ main img{
     position: relative;
     width: 100%;
     height: 100%;
-    /* text-align: center; */
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-    /* place-items: center; */
-  }
-  
+} 
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
     place-items: center;
-  }
-  
+} 
   .flip-card-front, .flip-card-back{
     position: absolute;
     width: 300px;
@@ -135,29 +96,42 @@ main img{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     place-items: center;
-    /* border: groove; */
-  }
-  
+} 
 .flip-card-front{
-    /* background-color: #CCCCFF; */
     background-color: transparent;
-    /* place-items: center; */
 } 
 .flip-card-back{
-    /* background-color:#CCCCFF ; */
     background-color: transparent;
     color: royalblue;
     transform: rotateY(180deg);
     text-align: center;
-    /* border: groove; */
 }
 
 /* Creating the media queries */
+@media only screen and (min-width: 300px) {
+    .flex{
+        display:flex;
+        flex-flow: row wrap;
+    } 
+    body{
+        background-color: #CCCCFF;
+    }
+}
 
 @media all and (min-width: 700px){
-    .flex{
-        justify-content: center;
-        flex-flow: row wrap;
+    .gallery{
+        width: 90%;
+        height: 90%;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        align-items: center;
+        justify-content: space-around;
+        grid-gap: 80px;
+        padding-bottom: 50px;
+    }
+    body{
+        background-color: #CCCCFF;
     }
 }
 
@@ -174,6 +148,20 @@ main img{
 }
 
 @media all and (min-width: 1000px){
+body{
+    font-size: 25px;
+    background-color: #CCCCFF;
+    line-height: 1.45;
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    justify-content: center;
+    flex-flow: row wrap;
+}
+}
+
+@media screen and (min-width: 900px){
     h1{
         animation-duration: 3s;
         animation-name: slidein;
@@ -217,13 +205,8 @@ main img{
           width: 100%;
         }
     }
-.gallery img{
-    grid-template-columns: 1fr 3fr 3fr ;
-    grid-template-rows: 25% 25% 25%;
-    place-items: center;
+.flex{
+        justify-content: center;
+        flex-flow: row wrap;
 }
-}
-
-@media screen and (min-width: 900px){
-
 }
