@@ -94,10 +94,12 @@ main img{
     place-items: center;
 }
 .gallery img{
-    width: 3000%;
-    height: 3000%;
+    /* width: 3000%;
+    height: 3000%; */
+    width: 300px; 
+    height: 300px;
     border: 20px groove #ffccff;
-    place-items: center;
+    /* place-items: center; */
     /* display: flex; */
     /* margin-top: 80px; */
 }
@@ -117,8 +119,8 @@ main img{
     /* text-align: center; */
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    place-items: center;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    /* place-items: center; */
   }
   
   .flip-card:hover .flip-card-inner {
@@ -139,14 +141,15 @@ main img{
 .flip-card-front{
     /* background-color: #CCCCFF; */
     background-color: transparent;
-    place-items: center;
+    /* place-items: center; */
 } 
 .flip-card-back{
     /* background-color:#CCCCFF ; */
     background-color: transparent;
-    color: white;
+    color: royalblue;
     transform: rotateY(180deg);
     text-align: center;
+    /* border: groove; */
 }
 
 /* Creating the media queries */
